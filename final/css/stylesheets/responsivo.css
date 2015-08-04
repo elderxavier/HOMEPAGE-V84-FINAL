@@ -176,124 +176,324 @@
 		margin-right: 0;
 	}
 }
-@media(max-width: 1700px) { 
-	
-	#menu ul{
-		margin-left: 80px;
+@media(max-width: 1800px) { 
+	#menu .rigth-top{  	
+  		margin-right: 10.5%;  
 	}
-	.social-networks{
-		margin-right: 360px;
+	#menu .left-top{  
+  		margin-left: 10.5%;
+	}	
+	
+}
+
+@media(max-width: 1500px) { 	
+
+	#home {
+		height: 83%;
+	}	
+	#comofunciona .main-container {
+		margin-left: -20%;
+	}
+	#classificados .main-container {
+		margin-left: -20%;
+	}
+	#classificados #classificados-link {
+		margin-left: -20%;
+	}
+	#top-logos-ul { 
+  		margin-left: 14.5%;
+	}
+	#contato .bg-contato {
+		margin-left: -15%;
+	}
+
+}
+
+@media(max-width: 1280px) { 
+#menu .rigth-top{  	
+  		margin-right: 5.5%;  
+	}
+	#menu .left-top{  
+  		margin-left: 5.5%;
+	}
+	#contato .bg-contato {
+		margin-left: -25%;
 	}
 }
 
-@media(max-width: 1500px) { 
-	
-	#menu ul{
-		margin-left: 150px;
+@media(max-width: 1200px) { 
+	#menu {
+		height: 100px;
 	}
-	.social-networks{
-		margin-right: 210px;
+	#menu .rigth-top{  	
+  		margin-right: 5.5%;  
 	}
-}
+	#menu .left-top{  
+  		margin-left: 5.5%;
+	}
+	#menu .social-networks	{
+		margin-top: 9px;
+	}
+	#menu #menu-principal {
+		margin-top: 5px;
+	}
 
-@media(max-width: 1300px) { 
+	#menu #logo-menu span{
+		background-position: -15 -23px
+	}
+
+	#top-logos-ul {
+		margin-left: 10.5%;
+	}
+	#comofunciona .main-container {
+		margin-left: -35%;
+	}
+	#classificados .main-container {
+		margin-left: -35%;
+	}
+	#classificados #classificados-link {
+		margin-left: -35%;
+	}
+	#contato .bg-contato {
+		margin-left: -40%;
+	}
+	#contato .container-contato{
+		margin-left: 30.33333%;
+	}
 	
-	#menu ul{
-		margin-left: 220px;
-	}
-	.social-networks{
-		margin-right: 65px;
-	}
 }
 @media (max-width: 1120px) {
-	#menu ul{
-		margin-left: 370px;
+	#menu .rigth-top{  	
+  		margin-right: 0;  
+  		width: 70%;
 	}
-	.social-networks{
-		margin-right: 20px;
+
+	#menu .left-top{  
+  		margin-left: 0;
+  		width: 30%;
 	}
-	#kanji-menu{
-		margin-left: 120px;
+	#comofunciona .main-container {
+		margin-left: -42%;
 	}
-	#top-logos-ul{
-		margin-left: 180px;
+	#contato .bg-contato {
+		margin-left: -44.53%;
+	}	
+	#top-logos-ul {
+		margin-left: 5.5%;
 	}
-	#logo-menu{
-		margin-left:145px
+	#solicitante .wrapper-content{
+		width: 90%;
+	}
+	#solicitante-container .sombra {
+		width: 90%;
 	}
 
 }
 @media (max-width: 1000px) {
-	#menu ul{
-		margin-left: 280px;
-	}
-	.social-networks{
-		margin-right: 20px;
-	}
-	#kanji-menu{
-		margin-left: 20px;
-	}
-	#top-logos-ul{
-		margin-left: 80px;
-	}
-	#logo-menu{
-		margin-left:45px
+	#menu .rigth-top{  	
+  		margin-right: 2%;    	
 	}
 
+	#menu #logo-menu {
+		margin-left: 35px;
+	}
+	#menu #logo-menu span {
+	  background: url("../../img/responsive-logo.png") no-repeat 0 0;
+	  height: 100px;
+	  width: 320px;	  
+	}
+	#home {
+		height: 63%;
+	}
+	#classificados .main-container {
+		margin-left: -45%;
+	}
+	#classificados #classificados-link {
+		margin-left: -45%;
+	}
+	#comofunciona .main-container {
+		margin-left: -52%;
+	}
+	#contato .box-info {
+		  width: 265px;		  
+	}
+	#contato .box-atendimento { 
+ 	 	width: 265px;  		
+  		padding-left: 40px;
+}
+	#contato .bg-contato .wrapper-content{
+		/*margin: 0;*/
+	}
+	#classificados #classificados-link {
+	  	margin-left: -688;	  	
+	  	margin-top: -148px;
+	  	width: 75px;
+	}
 }
 
 @media (max-width: 900px) {
-	#menu ul{
-		margin-left: 220px;
+	.top-logos {
+		display: none;
 	}
-	.social-networks{
-		margin-right: 5px;
+	#menu {
+		margin: 0 !important; 
+		height: 50px;
+		}
+	#kanji-menu {
+		display: none;
 	}
-	#kanji-menu{
-		margin-left: -10px
+	#menu #logo-menu{
+		margin-left: 65px;
 	}
-	#top-logos-ul{
-		margin-left: 50px;
+	#menu #logo-menu span {
+	  background: url("../../img/responsive-logo-2.png") no-repeat 0 0;
+	  height: 100px;
+	  width: 216px;	  
 	}
-	#logo-menu{
-		margin-left:2px
+	#menu #menu-principal {
+		position: fixed;		
 	}
-
-}
-
-
-
-/*
-@media(min-width: 1120px) { 
-	.container-holder, .main-container {
-	  float: none;
-	  margin-left: auto;
-	  margin-right: auto;
-	  position: relative;
-	  width: 2000px;
+	#menu #menu-principal .v8class {
+		background: none;
+		text-indent: 1;	
+	} 
+	#menu .rigth-top{  	
+  		margin-right: 0;    	
 	}
-	.container .wrapper-content {
-		margin-left: 0;
-		margin-right: 0;
-	}
-}
-*/
-
-
-
-/* -------------------------------------------------------------------------------------------------- */
-/* TABLET */
-/* -------------------------------------------------------------------------------------------------- */
-@media (max-width: 767px) {	
-
 	#logo-menu{
 		display: none;
 	}
-	.social-networks{
-		margin: 0 -200px;
-		float: none;
+	
+	#home {
+		height: 63%;
+		margin-top: 50px;
 	}
-	/* COLUNAS */
+	#comofunciona #bg-comofunciona-2 {
+		background: url("../../img/bg-comofunciona-2.jpg") no-repeat 0 -3px;
+		height: 427px;		
+	}
+	#comofunciona #comofunciona-bg-1,#comofunciona #comofunciona-bg-2 {
+		display: none;
+	}
+	#comofunciona .main-container {
+		margin-left: 0;
+		margin-top: -5px;
+	}
+	#classificados #bg-classificados-2{
+		background: url("../../img/bg-v8class-3.jpg") no-repeat 0 -3px;
+		height: 515;
+		width: 899px;
+
+	}
+	#solicitante .container-body {
+		height: 1300px;
+	}
+	#solicitante .box-form{
+		width: 50%;	
+	}
+	#solicitante .box-form2{
+		width: 50%;	
+	}
+	#solicitante .box-form3{
+		float: none;
+		width: 100%;			
+	}
+	#solicitante .box-form3:after{
+		clear: both;
+	}
+	#solicitante .sombra{
+		float: left;
+		width: 100%;
+	}
+	#solicitante .sombra:after{
+		clear: both;	
+	}
+	#solicitante .solicitante-bottom{
+		position: relative;
+	}
+	#classificados table {
+		display: none;
+	}
+	#classificados .main-container {
+		margin-left: -17%;
+	}
+
+	#classificados #classificados-link {
+	  	margin-left: -675;	  		  	
+	}
+	
+	#parceiro .parceiro-form-holder {
+ 		position: relative; 
+  		width: 90%;
+  		height: 530px;
+  	}	
+	#contato .box-info:after{
+		clear: both;
+	}
+	
+	#contato .box-formulario .contato-form-col01{
+		padding-bottom: 70px;
+	}
+	#contato .box-formulario:after{
+		clear: both;
+	}
+	
+	#contato .box-atendimento :after{
+		clear: both;
+	}
+	#contato .box-atendimento{
+		float: none;
+		padding: 20px 0 0 0;
+		top:350px;
+	}
+	#contato .box-atendimento h3 {
+		z-index: 99;
+		position: absolute;
+
+	}
+	
+	#footer {
+		padding-bottom: 35px;
+	}
+	#preview01, #preview02 {
+ 		 float: left;
+  		margin: 18px 0;  
+	}
+}
+
+@media (max-width: 767px) {	
+	#comofunciona .main-container {
+		margin-left: -27%;
+	}
+	#classificados .main-container {
+ 		 margin-left: -32%;
+	}
+	#classificados #classificados-link {
+  		margin-left: -750;  	
+	}
+	#contato #container-names li{
+		padding-left: 20px;
+	}
+	
+	#contato .box-info {
+  		width: 245px;
+	}
+	
+	#contato .container-bg {
+		margin-left: -20px;
+	}
+
+	#contato .box-formulario {
+		width: 40%;
+		margin-left: -10px;		
+	}
+	#contato .box-formulario .contato-form-col01 {
+		padding: 10px 10px 70px 10px;
+	}
+	#contato .box-atendimento{
+		margin-left: -20px;
+	}
+
 
 	/* 1 coluna */
 	.container4, .container5, .container6, 

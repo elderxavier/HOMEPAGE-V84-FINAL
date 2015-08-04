@@ -18,7 +18,7 @@
 
 
 	<title>Tudo em Peças</title>
-	<link rel="icon" href="imagens/favicon.png">
+	<link rel="icon" href="/imagens/favicon.png">
 </head>
 <body>
 <iframe id="upload_target" name="upload_target2" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>

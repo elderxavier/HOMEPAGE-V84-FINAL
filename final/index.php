@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/stylesheets/screen.css">
   	<link rel="stylesheet" href="css/stylesheets/stylesheet.css">
   	<link rel="stylesheet" href="css/stylesheets/responsivo.css">
-  	<link rel="stylesheet" href="css/stylesheets/paginas_responsivo.css">
+  	<!--<link rel="stylesheet" href="css/stylesheets/paginas_responsivo.css">-->
 
   	<script src="js/jquery-1.10.2.min.js"></script>
   	<!--slides 
@@ -28,6 +28,7 @@
 </head>
 <body>
 <iframe id="upload_target" name="upload_target2" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+
 <div class="main-container top-logos-container">
 	<div class="top-logos">
 		<ul id="top-logos-ul">				
@@ -45,35 +46,40 @@
 </div>
 	<!-- menu -->	
 	<div id="menu">		
-		<div class="logotipo main-container">
-			<div id="kanji-menu"> <span>kanji</span> </div>
-			<div id="logo-menu"> <span>menu</span> </div>
-			<ul id="menu-principal">				
-				<a href="#home"><li>Home</li></a>
-				<a href="#institucional"><li>Quem Somos</li></a>
-				<!--<a href="#comofunciona"><li>Como Funciona</li></a> -->
-				<a href="#solicitante"><li>Solicite</li></a>
-				<a id="menu-classificados" href="javascript:void(0)"><li class="sprite-background v8class">V8 Class</li></a>
-				<a href="#parceiro"><li>Parceiro</li></a>
-				<a href="#contato"><li>Contato</li></a>	
-				<!-- <a href=""><li class="login">Login</li></a> -->				
-			</ul>
-			<div class="social-networks">
-		        <ul class="social-networks-ul">
-		          <a href="https://instagram.com/" target="_blank">
-		            <li class="sprite-background instagram"><span class="social-toltip">Instagram</span></li>
-		          </a>		          
-		          <a href="https://www.youtube.com/" target="_blank">
-		            <li class="sprite-background youtube"><span class="social-toltip">Youtube</span></li>
-		          </a>
-		          <a href="https://www.facebook.com/allanjunior.ian" target="_blank">
-		            <li class="sprite-background facebook-2"><span class="social-toltip">Facebook</span></li>
-		          </a>		          
-		          <a href="https://twitter.com/?lang=pt" target="_blank">
-		            <li class="sprite-background twitter"><span class="social-toltip">Twitter</span></li>
-		          </a>
-		        </ul>      
-		    </div>    
+		<div class="main-container logotipo">
+			<div class="left-top">
+				<div id="kanji-menu"> <span>kanji</span> </div>
+				<div id="logo-menu"> <span>menu</span> </div>
+			</div>
+			<div class="rigth-top">
+				<div class="social-networks">
+			        <ul class="social-networks-ul">
+			          <a href="https://instagram.com/" target="_blank">
+			            <li class="sprite-background instagram"><span class="social-toltip">Instagram</span></li>
+			          </a>		          
+			          <a href="https://www.youtube.com/" target="_blank">
+			            <li class="sprite-background youtube"><span class="social-toltip">Youtube</span></li>
+			          </a>
+			          <a href="https://www.facebook.com/allanjunior.ian" target="_blank">
+			            <li class="sprite-background facebook-2"><span class="social-toltip">Facebook</span></li>
+			          </a>		          
+			          <a href="https://twitter.com/?lang=pt" target="_blank">
+			            <li class="sprite-background twitter"><span class="social-toltip">Twitter</span></li>
+			          </a>
+			        </ul>      
+			    </div> 
+			    <div class="clear"> </div>
+				<ul id="menu-principal">				
+					<a href="#home"><li>Home</li></a>
+					<a href="#institucional"><li>Quem Somos</li></a>
+					<!--<a href="#comofunciona"><li>Como Funciona</li></a> -->
+					<a href="#solicitante"><li>Solicite</li></a>
+					<a id="menu-classificados" href="javascript:void(0)"><li class="sprite-background v8class">V8 Class</li></a>
+					<a href="#parceiro"><li>Parceiro</li></a>
+					<a href="#contato"><li>Contato</li></a>	
+					<!-- <a href=""><li class="login">Login</li></a> -->				
+				</ul>				
+		    </div>   
 		</div>
 	</div><!-- menu -->
 
@@ -84,13 +90,15 @@
 				<div class="home-slider">
     <div id="amazingslider-6" style="display:block;position:relative;margin:15px auto 30px;">
         <ul class="amazingslider-slides" style="display:none;">
-            <li><img src="img/slide-home/pecas-slide.jpg" alt="Peças"/></li>
-            <li><img src="img/slide-home/pecas-slide.png" alt="Peças"/></li>
+            <li><img src="img/slide-home/slide-home.jpg" /></li>
+            <li><img src="img/slide-home/pecas-slide.jpg" /></li>
+            <li><img src="img/slide-home/slide-veiculos.jpg" /></li>
             
         </ul>
         <ul class="amazingslider-thumbnails" style="display:none;">
-            <li><img src="img/slide-home/pecas-slide-thumbnail.jpg" alt="Peças"/></li>
-            <li><img src="img/slide-home/pecas-slide-thumbnail.jpg" alt="Peças"/></li>
+            <li><img src="img/slide-home/slide-home-thumbnail.jpg" /></li>
+            <li><img src="img/slide-home/pecas-slide-thumbnail.jpg" /></li>
+            <li><img src="img/slide-home/slide-veiculos-thumbnail.jpg"/></li>
         </ul>        
     </div>
     
@@ -105,9 +113,9 @@
 	<!-- institucional -->
 	<div id="institucional">
 		<div class="main-container">
-			<div class="sprite-background logo"><span> V8 Motors<span></div>			
+			<div class="sprite-background logo"><span> V8 Motors</span></div>			
 			<h2>Quem Somos</h2>
-			<div class="sprite-background quem-somos"><span>Quem Somos<span> </div>
+			<div class="sprite-background quem-somos"><span>Quem Somos</span> </div>
 			<div class="content">
 				<p> A V8 Motors com sede em Balneário do Camboriú-SC, é o meio mais rápido para você adquirir peças. Funcionamos com umelo entre solicitante que procura alguma peçade veículo automotivo.</p>
 				<p>Você solicita a peça através do site e nós a encontramos facilitando a sua busca no Brasil e no exterior.Simples e rápido! </p>
@@ -119,6 +127,8 @@
 	<!-- escolha formulario -->
 	<div id="comofunciona">
 		<div class="main-container">
+			<div id="bg-comofunciona-2">
+			</div>
 			<h2>Como Funciona</h2>
 			<div id="comofunciona-bg-1"> </div>
 			<div id="comofunciona-bg-2"> </div>
@@ -130,7 +140,7 @@
 	<!-- solicitante -->
 	<div id="solicitante-container">
 		<div class="main-container">
-			<div class="sprite-background solicitante-top"><span>Quem Somos<span> </div>
+			<div class="sprite-background solicitante-top"><span>Quem Somos</span> </div>
 		</div>
 	<div id="solicitante">
 		<div class="main-container">
@@ -316,7 +326,7 @@
 					</div>
 				</div>
 					<div class="sombra"></div>
-					<div class="sprite-background solicitante-bottom"><span>!<span> </div>
+					<div class="sprite-background solicitante-bottom"><span>!</span> </div>
 			</div>
 		</div>		
 	</div>	
@@ -327,6 +337,8 @@
 	<!-- web classificados -->
 	<div id="classificados" class="classificados-class">	
 		<div class="main-container">
+			<div id="bg-classificados-2">
+			</div>
 			<table cellpadding="0" border="0" cellspacing="0">
 				<tr>
 				    <td id="bg-v8class_0_0"></td>
@@ -348,111 +360,114 @@
 	</div><!-- fim web classificados -->
 	
 	<!-- parceiro -->
-	<div id="parceiro">
-		<div class="main-container" id="par-1">
-			<div class="container container12">
-				<div class="wrapper-content">
-					<div class="clear"> </div>
-					<div id="parceiro-form-holder" class="parceiro-form-holder">
-						<div class="parceiro-form-col01">
-							<h3>Dados da empresa</h3>
-							<div class="container container12">
-								<div class="form-group">
-									<label>Empresa:</label>
-									<input type="text" id="empresa" />
+	<div id="parceiro">		
+		<div class="main-container" id="par-1">			
+			<div class="bg-parceiro">				
+				<div class="sprite-parceiro"><span>Seja um parceiro</span> </div>
+				<div class="container container12">
+					<div class="wrapper-content">
+						<div class="clear"> </div>
+						<div id="parceiro-form-holder" class="parceiro-form-holder">
+							<div class="parceiro-form-col01">
+								<h3>Dados da empresa</h3>
+								<div class="container container12">
+									<div class="form-group">
+										<label>Empresa:</label>
+										<input type="text" id="empresa" />
+									</div>
+								</div>
+								<div class="container container12">
+									<div class="form-group">
+										<label>E-mail:</label>
+										<input type="text" id="email" />
+									</div>
+								</div>
+								<div class="container container12">
+									<div class="form-group">
+										<label>Site:</label>
+										<input type="text" id="site" />
+									</div>
+								</div>
+								<div class="container container6">
+									<div class="form-group">
+										<label>Telefone:</label>
+										<input type="text" id="telefone" />
+									</div>
+								</div>
+								<div class="container container6">
+									<div class="form-group">
+										<label>Celular:</label>
+										<input type="text" id="chassi" />
+									</div>
+								</div>
+								<div class="container container6">
+									<div class="form-group">
+										<label>Nextel:</label>
+										<input type="text" id="nextel" />
+									</div>
+								</div>
+								<div class="container container12">
+									<div class="form-group">
+										<label>Redes Sociais:</label>
+										<textarea id="redes_sociais"></textarea>
+									</div>
 								</div>
 							</div>
-							<div class="container container12">
-								<div class="form-group">
-									<label>E-mail:</label>
-									<input type="text" id="email" />
+							<div class="parceiro-form-col02">	
+								<h3>Endereço</h3>						
+								<div class="container container4">
+									<div class="form-group">
+										<label>Estado:</label>
+										<select id="estado">
+											<option value=""></option>
+											<?php 
+												$estadoContent = file_get_contents('database/estado.txt');
+												$estadoList = explode("\n", $estadoContent);
+												foreach ($estadoList as $value) {
+													echo '<option value="'.trim($value).'">'.trim($value).'</option>';
+												}
+											?>
+										</select>
+									</div>
+								</div>							
+								<div class="container container8">
+									<div class="form-group">
+										<label>Cidade:</label>
+										<input type="text" id="cidade" />
+									</div>
 								</div>
-							</div>
-							<div class="container container12">
-								<div class="form-group">
-									<label>Site:</label>
-									<input type="text" id="site" />
+								<div class="container container6">
+									<div class="form-group">
+										<label>Bairro:</label>
+										<input type="text" id="bairro" />
+									</div>
 								</div>
-							</div>
-							<div class="container container6">
-								<div class="form-group">
-									<label>Telefone:</label>
-									<input type="text" id="telefone" />
+								<div class="container container6">
+									<div class="form-group">
+										<label>Cep:</label>
+										<input type="text" id="cep" />
+									</div>
 								</div>
-							</div>
-							<div class="container container6">
-								<div class="form-group">
-									<label>Celular:</label>
-									<input type="text" id="chassi" />
+								<div class="container container12">
+									<div class="form-group">
+										<label>Endereço:</label>
+										<input type="text" id="endereco" />
+									</div>
 								</div>
-							</div>
-							<div class="container container6">
-								<div class="form-group">
-									<label>Nextel:</label>
-									<input type="text" id="nextel" />
+								<div class="container container12">
+									<div class="form-group">
+										<label>Tipo de peça:</label>
+										<textarea id="tipo_peca"></textarea>
+									</div>
 								</div>
-							</div>
-							<div class="container container12">
-								<div class="form-group">
-									<label>Redes Sociais:</label>
-									<textarea id="redes_sociais"></textarea>
+								<div class="container container12">								
+									<div id="divResult"></div>							
 								</div>
-							</div>
-						</div>
-						<div class="parceiro-form-col02">	
-							<h3>Endereço</h3>						
-							<div class="container container4">
-								<div class="form-group">
-									<label>Estado:</label>
-									<select id="estado">
-										<option value=""></option>
-										<?php 
-											$estadoContent = file_get_contents('database/estado.txt');
-											$estadoList = explode("\n", $estadoContent);
-											foreach ($estadoList as $value) {
-												echo '<option value="'.trim($value).'">'.trim($value).'</option>';
-											}
-										?>
-									</select>
-								</div>
-							</div>							
-							<div class="container container8">
-								<div class="form-group">
-									<label>Cidade:</label>
-									<input type="text" id="cidade" />
-								</div>
-							</div>
-							<div class="container container6">
-								<div class="form-group">
-									<label>Bairro:</label>
-									<input type="text" id="bairro" />
-								</div>
-							</div>
-							<div class="container container6">
-								<div class="form-group">
-									<label>Cep:</label>
-									<input type="text" id="cep" />
-								</div>
-							</div>
-							<div class="container container12">
-								<div class="form-group">
-									<label>Endereço:</label>
-									<input type="text" id="endereco" />
-								</div>
-							</div>
-							<div class="container container12">
-								<div class="form-group">
-									<label>Tipo de peça:</label>
-									<textarea id="tipo_peca"></textarea>
-								</div>
-							</div>
-							<div class="container container12">								
-								<div id="divResult"></div>							
-							</div>
-							<div class="container container12">
-								<div class="form-group">
-									<button id="sendBtn" class="btn btn-primary">Cadastrar</button>
-									<button id="clearBtn" class="btn btn-default">Limpar</button>
+								<div class="container container12">
+									<div class="form-group">
+										<button id="sendBtn" class="btn btn-primary">Cadastrar</button>
+										<button id="clearBtn" class="btn btn-default">Limpar</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -468,109 +483,113 @@
 	<!-- contato -->
 	<div id="contato">
 		<div class="main-container">
-			<div class="main-container">
-				<div class="sprite-background contato-top"><span>Contato<span> </div>
-			</div>
-
-			<h2> Vamos <span>Conversar</span></h2>
-			<p class="p-topo"> Faça uma visita ou entre em contato, será um prazer atende-lo(a)</p>			
-				<ul id="container-names">
-					<li>					
-							<div class="sprite-background map fist"><span>Contato<span> </div>
+				<div class="sprite-background contato-top">
+					<span>Contato</span> 
+				</div>
+		</div>
+		<div class="main-container">
+			
+				<h2> Vamos <span>Conversar</span></h2>
+				<p class="p-topo"> Faça uma visita ou entre em contato, será um prazer atende-lo(a)</p>			
+					<ul id="container-names">
+						<li>					
+							<div class="sprite-background map fist"><span>Contato</span> </div>
 							<p>Allan Junior Ian</p>
 							<p><a href="tel:4796984548">(47) 9698-4548</a></p>						
-					</li>
-					<li>
-						
-							<div class="sprite-background map"><span>Contato<span> </div>
+						</li>
+						<li>							
+							<div class="sprite-background map"><span>Contato</span> </div>
 							<p>Yago Yuri</p>
-							<p><a href="tel:4796827778">(47) 9682-7778</a></p>
-						
-					</li>
-					<li>
-						
-							<div class="sprite-background map"><span>Contato<span> </div>
+							<p><a href="tel:4796827778">(47) 9682-7778</a></p>							
+						</li>
+						<li>							
+							<div class="sprite-background map"><span>Contato</span> </div>
 							<p>Ygor Yan</p>
-							<p><a href="tel:4797743824">(47) 9774-3824</a></p>
-						
-					</li>
+							<p><a href="tel:4797743824">(47) 9774-3824</a></p>							
+						</li>
 					</ul>
-			<div class="container container-contato">				
-				<div class="wrapper-content">									
-					<div class="box-info">
-						<div class="title">
-							<h3> Estamos <span>Aqui</span></h3>
+			<div class="bg-contato">
+				<div class="container container-contato">				
+					<div class="wrapper-content">									
+						<div class="box-info">
+							
+								<h3> Estamos <span>Aqui</span></h3>
+							
+							<div class="container-bg">
+								<p>Rua 1500 N° 577 Sala 11</p>
+								<p>Edifício Coliseum- Centro</p>
+								<p>Balneário do Camboriú-SC</p>
+								<p>Telefone:(47) 3056-2221</p>
+								<p>contato@v8motors.co.br</p>
+								<p class="last-p" >Veja no mapa 
+									<div class="sprite-background map last-map">
+										<span>Contato</span> 
+									</div>
+								</p>
+							</div>
+						</div>									
+						<div class="box-formulario">
+							
+								<h3> Fale <span>Conosco</span></h3>
+							
+								<div class="contato-form-col01">							
+									<form action="enviar-contato.php" method="post" target="iAjax">
+								<div class="container container12">
+									<div class="form-group">
+										<label>Empresa:</label>
+										<input type="text" id="empresa">
+									</div>
+								</div>
+								<div class="container container12">
+									<div class="form-group">
+										<label>E-mail:</label>
+										<input type="text" id="email">
+									</div>
+								</div>
+								<div class="container container12">
+									<div class="form-group">
+										<label>Site:</label>
+										<input type="text" id="site">
+									</div>
+								</div>
+								<div class="container container6">
+									<div class="form-group">
+										<label>Telefone:</label>
+										<input type="text" id="telefone">
+									</div>
+								</div>
+								<div class="container container6">
+									<div class="form-group">
+										<label>Celular:</label>
+										<input type="text" id="chassi">
+									</div>
+								</div>
+								<div class="container container6">
+									<div class="form-group">
+										<label>Nextel:</label>
+										<input type="text" id="nextel">
+									</div>
+								</div>
+								<div class="container container12">
+									<div class="form-group">
+										<label>Redes Sociais:</label>
+										<textarea id="redes_sociais"></textarea>
+									</div>
+								</div>
+								<div class="container submit-container">
+									<button type="submit" value="enviar" class="btn btn-primary" /><span>ENVIAR</span></buton>
+								</div>
+							</form>
+							</div>
 						</div>
-						<div class="container-bg">
-							<p>Rua 1500 N° 577 Sala 11</p>
-							<p>Edifício Coliseum- Centro</p>
-							<p>Balneário do Camboriú-SC</p>
-							<p>Telefone:(47) 3056-2221</p>
-							<p>contato@v8motors.co.br</p>
-							<p class="last-p" >Veja no mapa <div class="sprite-background map last-map"><span>Contato<span> </div></p>
-						</div>
-					</div>									
-					<div class="box-formulario">
-						<div class="title">
-							<h3> Fale <span>Conosco</span></h3>
-						</div>												
-							<div class="contato-form-col01">							
-								<form action="enviar-contato.php" method="post" target="iAjax">
-							<div class="container container12">
-								<div class="form-group">
-									<label>Empresa:</label>
-									<input type="text" id="empresa">
-								</div>
+						<iframe name="iAjax" style="display: none"></iframe>
+						<div class="box-atendimento">
+						
+								<h3> Atendimento</h3>
+							
+							<div class="bg-atendimento">
+								<div class="sprite-background atendimento"><span>Atendimento</span></div>
 							</div>
-							<div class="container container12">
-								<div class="form-group">
-									<label>E-mail:</label>
-									<input type="text" id="email">
-								</div>
-							</div>
-							<div class="container container12">
-								<div class="form-group">
-									<label>Site:</label>
-									<input type="text" id="site">
-								</div>
-							</div>
-							<div class="container container6">
-								<div class="form-group">
-									<label>Telefone:</label>
-									<input type="text" id="telefone">
-								</div>
-							</div>
-							<div class="container container6">
-								<div class="form-group">
-									<label>Celular:</label>
-									<input type="text" id="chassi">
-								</div>
-							</div>
-							<div class="container container6">
-								<div class="form-group">
-									<label>Nextel:</label>
-									<input type="text" id="nextel">
-								</div>
-							</div>
-							<div class="container container12">
-								<div class="form-group">
-									<label>Redes Sociais:</label>
-									<textarea id="redes_sociais"></textarea>
-								</div>
-							</div>
-							<div class="container submit-container">
-								<button type="submit" value="enviar" class="btn btn-primary" />ENVIAR</buton>
-							</div>
-						</form>
-						</div>
-					</div>
-					<iframe name="iAjax" style="display: none"></iframe>
-					<div class="box-atendimento">
-					<div class="title">
-							<h3> Atendimento</h3>
-						</div>																		
-						<div class="bg-atendimento">
-							<div class="sprite-background atendimento"><span>Atendimento<span></div>
 						</div>
 					</div>
 				</div>
@@ -580,7 +599,18 @@
 	<div id="footer">
 		<div class="main-container">
 		</div>
-	</div>
+	</div>	
+<script type="text/javascript">
 
+$(document).ready(function(){
+	//setTimeout(function(){ 
+	$('.amazingslider-box-0').children().each(function() {       					 
+   			if ($(this).text() == 'Amazing Slider Free Version'){   				   			 		
+   			 	$(this).remove();   			 	
+   			}
+		});     
+		//}, 1500); 
+	})
+</script>
 </body>
 </html>

@@ -31,6 +31,7 @@ $mensagem = $_POST['mensagem'];
 $nome_do_site="Tudo em Peças";
 
 $email_para_onde_vai_a_mensagem = "contato@tudoempecas.com.br";
+//$email_para_onde_vai_a_mensagem = "eldersxavier@gmail.com";
 
 $nome_de_quem_recebe_a_mensagem = "Tudo em Peças";
 
