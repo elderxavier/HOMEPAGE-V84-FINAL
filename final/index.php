@@ -3,21 +3,12 @@
 	<meta charset="UTF-8" />	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<meta name="HandheldFriendly" content="true"/>
-	<link type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" media="screen" />
-	<link rel="stylesheet" href="css/stylesheets/screen.css">
-  	<link rel="stylesheet" href="css/stylesheets/stylesheet.css">
+	<meta name="HandheldFriendly" content="true"/>	
+	<link rel="stylesheet" href="css/stylesheets/screen.css">  	
   	<link rel="stylesheet" href="css/stylesheets/responsivo.css">
-  	<!--<link rel="stylesheet" href="css/stylesheets/paginas_responsivo.css">-->
-
-  	<script src="js/jquery-1.10.2.min.js"></script>
-  	<!--slides 
-  	<script type='text/javascript' src='jquery.js'></script>
-  	-->
+  	<script src="js/jquery-1.10.2.min.js"></script>  	
 	<script type='text/javascript' src="js/jquery-migrate.min.js"></script>
-	<script type='text/javascript' src="js/amazingslider.js"></script>
-
-  	<!-- <script type="text/javascript" src="js/fancybox/jquery.fancybox.js?v=2.1.5"></script> -->
+	<script type='text/javascript' src="js/amazingslider.js"></script>  	
   	<script type="text/javascript" src="js/functions.js"></script>
   	<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
   	<script type="text/javascript" src="js/common.functions.js"></script>

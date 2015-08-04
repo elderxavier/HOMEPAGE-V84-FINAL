@@ -1031,26 +1031,20 @@ h6 {
 }
 
 #contato .btn-primary  {
+  color: #ffffff;
+  background: #737373; 
   margin-top: 10px;
-  background: #fbb212; /* Old browsers */
-  background: -moz-linear-gradient(top,  #fbb212 0%, #fdd918 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbb212), color-stop(100%,#fdd918)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #fbb212 0%,#fdd918 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #fbb212 0%,#fdd918 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #fbb212 0%,#fdd918 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #fbb212 0%,#fdd918 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbb212', endColorstr='#fdd918',GradientType=0 ); /* IE6-9 */
+  background: -moz-linear-gradient(top, #737373 0%, #0e0e0e 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#737373), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #737373 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #737373 0%,#0e0e0e 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #737373 0%,#0e0e0e 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #737373 0%,#0e0e0e 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#737373', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
 }
 #contato .btn-primary:hover {
-  color: #dfdfdf;
-  background: #b4ddb4; /* Old browsers */
-background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ddb4), color-stop(17%,#83c783), color-stop(33%,#52b152), color-stop(67%,#008a00), color-stop(83%,#005700), color-stop(100%,#002400)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* IE10+ */
-background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+  background: #7e7e7e;
+  color: #fdfdfd;  
 }
 
 #contato .box-atendimento{
