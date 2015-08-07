@@ -144,6 +144,9 @@ strong {
   z-index: 997;
   margin-left: 2.5%;
 }
+#menu a {
+  text-decoration: none;
+}
 #menu ul li {
   color: #777777;
   cursor: pointer;
