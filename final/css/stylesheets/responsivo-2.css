@@ -1,0 +1,553 @@
+
+/* -------------------------------------------------------------------------------------------------- */
+/* CONTAINERS */
+/* -------------------------------------------------------------------------------------------------- */
+
+.row {
+  clear: both;
+  display: block;
+}
+
+/* COLUNAS */
+
+.container {
+  float: left;
+  position: relative;
+}
+.container .wrapper-content {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* 1 coluna */
+.container12 {
+  width: 100%;
+}
+/* container8 */
+.container8 {
+  width: 66.67%;
+}
+.container7 {
+  width: 58.33%;
+}
+/* 2 colunas */
+.container6 {
+  width: 50%;
+}
+/* container5 */
+.container5 {
+  width: 41.665%;
+}
+/* 3 colunas */
+.container4 {
+  width: 33.33%;
+}
+/* 4 colunas */
+.container3 {
+  width: 25%;
+}
+/* 6 colunas */
+.container2 {
+  width: 16.667%;
+}
+/* 12 colunas */
+.container1 {
+  width: 8.333%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.container1 .wrapper-content {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+/* CONTENT CONTAINERS */
+.container-holder {
+	position: relative;
+}
+.col2-left-layout .sidebar, .col2-right-layout .sidebar {
+	width: 30%;
+}
+/* sidebar */
+.col2-left-layout .sidebar {
+	float: left;
+}
+.col2-right-layout .sidebar {
+	float: right;
+}
+/* main */
+.main {
+	position: relative;
+	width: 100%;
+}
+.col2-left-layout .main, .col2-right-layout .main {
+	width: 70%;
+}
+.col2-left-layout .main {
+	float: right;
+}
+.col2-right-layout .main {
+	float: left;
+}
+
+
+
+/* FORM CONTAINERS */
+.form-group {
+  margin: 10px 7px;
+  position: relative;
+}
+.form-group input[type="text"], .form-group input[type="password"], .form-group textarea, .form-group select {
+  float: left;
+  border: 0 none;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  height: 34px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 17px;
+  width: 100%;
+  background-color: #FFF;
+}
+.form-group textarea {
+	height: 149px;
+}
+.form-group .radio-group {
+	float: left;
+	width: 100%;
+}
+.form-group label, .form-group .label {
+  float: left;
+  text-align: left;
+  color: #7e7e7e;
+  font-family: "Arial";
+  font-size: 14px;  
+}
+.form-group label {	
+	width: 100%;
+}
+.form-group input[type="radio"] {
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+.form-group .radio-group label, .form-group .radio-group .label {
+  float: left;
+  width: auto !important;
+  margin-left: 6px;
+}
+.form-group .radio-group label{
+  margin-right: 25px;
+}
+/* form inline */
+.form-inline input[type="text"],
+.form-inline input[type="password"],
+.form-inline textarea, .form-inline select, 
+.form-group .radio-group {
+  width: calc(100% - 65px);
+  width: -moz-calc(100% - 65px);
+  width: -webkit-calc(100% - 65px);
+}
+.form-inline label{
+  width: 65px;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/* DESKTOP */
+/* -------------------------------------------------------------------------------------------------- */
+
+	 
+@media(min-width: 2000px) { 
+	body, #menu {
+		width: 100%;
+		margin: 0 auto;
+		clear: both;
+	}
+
+
+ #home, #institucional, #comofunciona, #solicitante-container, #classificados, #parceiro, #contato,{
+		width: 100%;		
+		margin: 0 auto;
+	}	
+	#menu .main-container {		
+		max-width: 2000px;
+		margin: 0 auto;
+		position: relative;		
+	}
+
+	 #home .main-container, #institucional .main-container, #comofunciona .main-container,
+	 #solicitante-container .main-container, #classificados .main-container, #parceiro .main-container, #contato .main-container, body {
+		width: 2000px;		
+	}
+
+}
+
+@media(max-width: 1999px) {
+ 	body {
+ 		width: 100%;
+ 		overflow-x: hidden;
+ 	}	
+
+		#home .main-container, #institucional .main-container, #comofunciona .main-container,
+	 	#solicitante-container .main-container, #classificados .main-container, #parceiro .main-container, #contato .main-container, {
+			
+			clear: both;			
+	}
+	
+@media(max-width: 1680px) {
+	#comofunciona .main-container {
+		margin-left: -150px;
+	}
+}
+@media(max-width: 1600px) {
+	#comofunciona .main-container {
+		margin-left: -200px;
+	}
+}
+@media(max-width: 1440px) {
+	#comofunciona .main-container,#classificados .main-container {
+		margin-left: -280px;
+	}
+	#classificados #classificados-link {
+		left: 987;
+	}
+	#contato .container-contato {
+		margin-left: 17%;
+	}
+	#contato .box-info, #contato .box-formulario, #contato .box-atendimento {
+		width: 20%;
+	}
+	 
+
+}
+
+@media(max-width: 1400px) {
+}
+@media(max-width: 1366px) {
+	#comofunciona .main-container {
+		margin-left: -354px;
+	}
+}
+@media(max-width: 1280px) {
+	
+}
+
+
+@media(max-width: 1152px) {
+}	
+@media(max-width: 1024px) {
+	.top-logos {
+		display: none;
+	}
+	#menu {
+		height: 50px;
+	}
+	#kanji-menu {
+		display: none;
+	}
+	#menu .left-top{
+		margin: 0 40%;
+	}
+	#menu #logo-menu span {
+	  background: url("../../img/responsive-logo-2.png") no-repeat 0 -25px;
+	  height: 47px;
+	  width: 216px;	  
+	}
+	#menu #menu-principal .v8class {
+		background: none;
+		text-indent: 1;	
+	}
+	#menu .social-networks {
+		margin-top: 10px;
+	}
+	#home {
+		margin-top: 52px;
+	}	
+	#institucional .sprite-background{
+		zoom: 0.75;
+	}
+	#comofunciona .main-container {
+		margin-left: -510px;
+	}
+	#solicitante .wrapper-content {
+		width: 90%;
+	}
+
+	#classificados .main-container {
+		margin-left: -480px;	
+	}
+	#classificados #classificados-link {
+		left: 787;
+	}
+	#contato .container-contato {
+		margin-left: 2.5%;
+	}
+	#contato .box-info, #contato .box-formulario, #contato .box-atendimento {
+		width: 30%;
+	}
+
+}	
+
+@media(max-width: 855px) {
+	#comofunciona #comofunciona-bg-1, #comofunciona #comofunciona-bg-2 {
+		background: none;
+		display: none;
+	}
+	#comofunciona .main-container {
+		margin-left: -30px;
+	}
+	#comofunciona #bg-comofunciona-2{
+		background: url("../../img/bg-comofunciona-2.jpg") no-repeat 0 -3px;
+		height: 427px;				
+	}
+	#solicitante .container-body {
+		padding-bottom: 10px;
+	}
+	#solicitante .box-form .wrapper-form, #solicitante .box-form2 .wrapper-form {
+		margin-right: 8px;
+	}
+	/*#solicitante .box-form label, #solicitante .box-form2 label, #solicitante .box-form3 label {
+		font-size: 18px;
+	}*/
+	#solicitante .radio-group label{
+		font-size: 18px;
+	}
+	#solicitante-container #preview02 img {
+		width: 85%;
+	}
+	#classificados .main-container {
+		margin-left: -50px;
+	}
+	#classificados table {
+		display: none;
+	}
+	#classificados #bg-classificados-2{
+		background: url("../../img/bg-v8class-3.jpg") no-repeat 0 -3px;
+		height: 500;
+	}
+	#classificados #classificados-link {
+		left: 687;
+		margin-top: -120px;
+	}
+
+}	
+
+@media(max-width: 800px) {
+}	
+
+@media(max-width: 769px) {
+	#comofunciona .main-container {
+		margin-left: -80px;
+	}
+	#classificados .main-container {
+  		margin-left: -90px;
+	}
+	#classificados #classificados-link {
+		left: 647;
+		margin-top: -118px;
+	}
+	#parceiro .container .wrapper-content{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	#contato .bg-contato {
+		margin-left: -350px;
+	}
+	#contato .container-contato {
+		margin-left: 33.5%;
+	}
+	/*#contato .box-info, #contato .box-formulario, #contato .box-atendimento {*/
+		#contato .box-atendimento {
+			float: none;
+			top: 332px
+		}
+		#contato .box-atendimento h3 {
+			display: none;
+		}
+
+}	
+
+@media(max-width: 720px) {
+}	
+@media(max-width: 641px) {
+	#menu .left-top {
+		margin-left: 25%;
+	}
+	#comofunciona .main-container {
+		margin-left: -140px;
+	}
+	#solicitante .wrapper-content {
+		height: 1350px;
+	}
+	#solicitante .box-form, #solicitante .box-form2 {
+		width: 50%;
+	}
+	#solicitante .box-form3 {
+		width: 100%;
+		float: none;			
+	}
+	#solicitante .box-form3:after {
+		clear: both;
+	}
+	#solicitante-container #preview02 img {
+		width: 30%;
+	}
+	#solicitante button, #solicitante .box-form3 input[type="submit"] {
+		width: 30%;
+		height: 50px;
+	}
+	#classificados .main-container {
+ 		 margin-left: -230px;
+	}
+	#classificados #classificados-link {
+		left: 507px;
+	}
+	#parceiro .sprite-parceiro {
+		background-position: -45px -50px;
+	}
+	#parceiro .parceiro-form-holder {
+		width: 90%;
+	}
+	#parceiro .parceiro-form-col01{		
+		width: 100%;
+		position: relative;		
+		padding-bottom: 35px;
+	}
+	#parceiro .parceiro-form-col02 {
+		float: none;
+		margin-top: 5px;
+		width: 100%;
+		position: relative;		
+	}
+	#parceiro .parceiro-form-col01:after, #parceiro .parceiro-form-col02:after{
+		clear: both;		
+	}
+	#parceiro .parceiro-form-holder {
+		height: 950px;
+		margin-bottom: 100px;
+	}
+	#contato .container-contato {
+ 		 margin-left: 35.5%;
+	}
+
+
+}	
+@media(max-width: 481px) {
+	#menu .left-top {
+		margin-left: 10%;
+	}
+	#institucional .content {
+		max-width: 90%;
+	}
+	#comofunciona .main-container {
+		margin-left: -230px;
+	}
+	#solicitante .wrapper-content {
+		height: 1780px;
+	}
+	#solicitante .box-form, #solicitante .box-form2 {
+		width: 100%;
+	}
+	#solicitante-container #preview02 img {
+		width: 45%;
+	}
+	#solicitante button, #solicitante .box-form3 input[type="submit"]{
+		width: 50%;
+		height: 80px;
+	}
+	#classificados .main-container,#parceiro .sprite-parceiro {
+		zoom: 0.75;
+	}
+	#contato p {
+		max-width: 90%;
+	}
+	#contato #container-names li {
+		margin: 0;
+		padding-left: 0;
+	}
+	#contato .box-info{
+		float: none;
+		left: 150px;
+	} 
+	#contato .box-formulario{
+		float: none;
+		width: 430px;
+		top: 300px;
+		left: 30px;
+	}
+	#contato .box-formulario h3, #contato .box-formulario h3 span {
+		color: #dedede;
+		position: relative;
+		z-index: 999;
+	}
+	#contato .box-atendimento {
+		display: none;
+	}
+	#footer{
+		height: 100%;
+	}
+
+}	
+@media(max-width: 320px) {
+	#menu #logo-menu {
+		display: none;
+	}
+	#institucional .sprite-background {
+		zoom: 0.55;
+	}
+	#comofunciona .main-container {
+		margin-left: -145px
+	}
+	#comofunciona #bg-comofunciona-2{
+		zoom: 0.65;	
+	}
+	#solicitante-container .sprite-background {
+		zoom: 0.75;	
+	}
+	#solicitante .wrapper-content {
+		height: 1950px;
+	}
+	#solicitante p {
+		max-width: 90%;
+	}
+	#solicitante .box-form2 .container6 {
+		width: 100%;
+	}
+	#classificados .main-container {
+		margin-left: -200px;
+	}
+	#classificados #bg-classificados-2 {
+		zoom: 0.7;
+	}
+	#classificados #classificados-link {
+		left: 307;
+		margin-top: -85px;
+	}
+	#parceiro .sprite-parceiro {
+		zoom: 0.47;
+	}
+	#contato #container-names {		
+		zoom: 0.7;
+	}
+	#contato p {
+		width: 100%;
+		padding-left: 10px;
+	}
+	#contato .box-info{
+		left: 90px;
+		width: 300px;
+	}
+	#contato .box-formulario {
+		left: 75px;
+		width: 300px;
+	}
+	#footer {
+		height: 800px;
+	}
+}	
+	

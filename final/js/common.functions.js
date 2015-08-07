@@ -18,7 +18,7 @@
 	$.fn.menuMobile = function(options){
 	
 		var settings = $.extend({
-			'minWidth' : 900
+			'minWidth' : 1024
 		}, options);
 
 		return this.each(function(){

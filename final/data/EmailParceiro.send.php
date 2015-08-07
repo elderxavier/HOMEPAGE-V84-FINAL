@@ -21,7 +21,7 @@
 	$email_from = $email;
 	$name       = $empresa;	
 	$assunto    = 'Cadastro de Parceiro';
-	$email_to   = 'parceiro@tudoempecas.com.br';		
+	$email_to   = 'v8@v8motors.com.br';		
 	$anexos     = $pAnexos;
 
 

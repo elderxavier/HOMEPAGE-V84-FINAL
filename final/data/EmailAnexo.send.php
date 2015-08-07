@@ -23,8 +23,9 @@
 	$email_from = $email;
 	$name       = $nome;	
 	$assunto    = 'Solicitação de Peça';
-	$email_to   = 'pedidos@tudoempecas.com.br'; //'tudo@tudoempecas.com.br';	
+	//$email_to   = 'v8@v8motors.com.br'; //'tudo@tudoempecas.com.br';	
 	//$email_to = 'rudineictba@hotmail.com';	
+	$email_to   = 'eldersxavier@gmail.com';
 	$anexos     = $anexos02;
 
 

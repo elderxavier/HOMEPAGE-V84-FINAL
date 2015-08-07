@@ -2,17 +2,17 @@
 	<meta http-equiv="Content-Language" content="pt-br">
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta charset="UTF-8">	
-	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	
 	<meta name="HandheldFriendly" content="true">	
 	<meta name="description" content="v8 Motors -peças e acessorios para veículos"> 
 	<link rel="stylesheet" href="css/stylesheets/screen.css">  	
-  	<link rel="stylesheet" href="css/stylesheets/responsivo-2.css">
+  	<link rel="stylesheet" href="css/stylesheets/responsivo.css">
   	<script src="js/jquery-1.10.2.min.js"></script>  	
 	<script type='text/javascript' src="js/jquery-migrate.min.js"></script>
-	<script type='text/javascript' src="js/amazingslider.js"></script>  	  	
+	<script type='text/javascript' src="js/amazingslider.js"></script>  	
+  	<script type="text/javascript" src="js/functions.js"></script>
   	<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
   	<script type="text/javascript" src="js/common.functions.js"></script>
 
@@ -21,22 +21,21 @@
 	<link rel="icon" href="img/favicon.png">
 </head>
 <body>
-
-	
 <iframe id="upload_target" name="upload_target2" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
-<div id="logos">
-	<div class="main-container top-logos-container">
-		<div class="top-logos">
-			<ul id="top-logos-ul">				
-					<a href="http://www.allanjuniorian.com.br/" target="_blank"> <li class="li-logo-1 background-logos"> ALLAN JUNIOR IAN </li></a>
-					<a href="http://www.sii9.com.br/" target="_blank"> <li class="li-logo-2 background-logos"> SII9 CREATIVE STUDIO </li></a>
-					<a href="http://www.reidasvendas.com.br/" target="_blank"><li class="li-logo-3 background-logos"> REI DAS VENDAS </li></a>
-					<a href="http://www.mixpromo.com.br/" target="_blank"><li class="li-logo-4 background-logos"> MIX PROMO</li></a>
-					<a href="http://tudoempecas.com.br/" target="_blank"><li class="li-logo-5 background-logos"> TUDO EM PEÇAS</li></a>
-					<a href="http://www.v8motors.com.br/" target="_blank"><li class="li-logo-6 background-logos"> V8 MOTORS</li></a>
-					<a href="http://www.acheicommerce.com.br/" target="_blank"><li class="li-logo-7 background-logos"> ACHEI COMMERCE</li></a>
-				</ul>
-		</div>		 	
+
+<div class="main-container top-logos-container">
+	<div class="top-logos">
+		<ul id="top-logos-ul">				
+				<a href="http://www.allanjuniorian.com.br/" target="_blank"> <li class="li-logo-1 background-logos"> ALLAN JUNIOR IAN </li></a>
+				<a href="http://www.sii9.com.br/" target="_blank"> <li class="li-logo-2 background-logos"> SII9 CREATIVE STUDIO </li></a>
+				<a href="http://www.reidasvendas.com.br/" target="_blank"><li class="li-logo-3 background-logos"> REI DAS VENDAS </li></a>
+				<a href="http://www.mixpromo.com.br/" target="_blank"><li class="li-logo-4 background-logos"> MIX PROMO</li></a>
+				<a href="http://tudoempecas.com.br/" target="_blank"><li class="li-logo-5 background-logos"> TUDO EM PEÇAS</li></a>
+				<a href="http://www.v8motors.com.br/" target="_blank"><li class="li-logo-6 background-logos"> V8 MOTORS</li></a>
+				<a href="http://www.acheicommerce.com.br/" target="_blank"><li class="li-logo-7 background-logos"> ACHEI COMMERCE</li></a>
+			</ul>
+	</div>
+	 <div class="top-wrapper-logos">
 	</div>
 </div>
 	<!-- menu -->	
@@ -65,12 +64,14 @@
 			    </div> 
 			    <div class="clear"> </div>
 				<ul id="menu-principal">				
-					<a href="javascript:void(0)"><li class="link-home">Home</li></a>
-					<a href="javascript:void(0)"><li class="link-institucional">Quem Somos</li></a>					
-					<a href="javascript:void(0)"><li class="link-solicitante">Solicite</li></a>
+					<a href="#home"><li>Home</li></a>
+					<a href="#institucional"><li>Quem Somos</li></a>
+					<!--<a href="#comofunciona"><li>Como Funciona</li></a> -->
+					<a href="#solicitante"><li>Solicite</li></a>
 					<a id="menu-classificados" href="javascript:void(0)"><li class="sprite-background v8class">V8 Class</li></a>
-					<a href="javascript:void(0)"><li class="link-parceiro">Parceiro</li></a>
-					<a href="javascript:void(0)"><li class="link-contato">Contato</li></a>						
+					<a href="#parceiro"><li>Parceiro</li></a>
+					<a href="#contato"><li>Contato</li></a>	
+					<!-- <a href=""><li class="login">Login</li></a> -->				
 				</ul>				
 		    </div>   
 		</div>
@@ -148,12 +149,9 @@
 						<div id="solicitante-form-holder">	
 							
 							<div class="box-form">	
-								<div class="wrapper-form">
-									<div class="container title-box">
-										<h4> Dados Pessoais</h4>										
-									</div>
+								<div class="wrapper-form">									
 
-									<div class="container containe12">
+									<div class="container containe126">
 										<div class="form-group">
 											<label>Nome:</label>
 											<input type="text" id="nome"/>
@@ -198,7 +196,7 @@
 											<input type="text" id="cidade" />
 										</div>
 									</div>
-									<div class="container container12">
+									<div class="container container6">
 										<div class="form-group">
 											<label>Bairro:</label>
 											<input type="text" id="bairro"/>
@@ -210,16 +208,13 @@
 
 
 							<div class="box-form2">	
-								<div class="wrapper-form">
-									<div class="container title-box">
-										<h4> Dados da Peça</h4>										
-									</div>									
+								<div class="wrapper-form">									
 									<div class="container container12">
 										<div class="form-group">
 											<label>Origem:</label>
 											<div class="radio-group">										
-												<input type="radio" name="nacionalidade" id="nacionalidade" value="Nacionais" /><label>Nacionais</label>
-												<input type="radio" name="nacionalidade" id="nacionalidade" value="Importado" /><label>Importados</label>
+												<input type="radio" name="nacionalidade" id="nacionalidade" value="Nacionais" /><label>Nacional</label>
+												<input type="radio" name="nacionalidade" id="nacionalidade" value="Importado" /><label>Importado</label>
 											</div>
 										</div>
 									</div>
@@ -278,13 +273,13 @@
 										<span class="import-headding">PREENCHIMENTO PARA PEÇAS DE VEÍCULOS IMPORTADOS</span>
 										<div class="container container8">
 											<div class="form-group">
-												<label>Número do chassi:</label>
+												<label>Numero do chassi:</label>
 												<input type="text" id="num_chassi"/>
 											</div>
 										</div>
 										<div class="container container8">
 											<div class="form-group">
-												<label>Número da peça:</label>
+												<label>Numero da peça:</label>
 												<input type="text" id="num_peca"/>
 											</div>
 										</div>
@@ -299,12 +294,9 @@
 							</div>
 							<div class="box-form3">	
 								<div class="wrapper-form">									
-									<div class="container title-box">
-										<h4> Fotos</h4>										
-									</div>									
 									<div class="container container12">
 										<div class="form-group">
-											<label id="add-imagens-label">Escolher Arquivos:</label>
+											<label id="add-imagens-label">Adicionar imagens:</label>
 											<form id="form_fotos02" action="data/EmailAnexo.php" target="upload_target2" enctype="multipart/form-data" method="post"> 
 												<button id="open-foto-field2" class="btn-div">Escolher Arquivo</button>
 												<input type="file" name="foto_field" id="foto_field" class="file-hidden"/>
@@ -496,7 +488,7 @@
 		<div class="main-container">
 			
 				<h2> Vamos <span>Conversar</span></h2>
-				<p class="p-topo"> Faça uma visita ou entre em contato, será um prazer atende-lô(a)</p>			
+				<p class="p-topo"> Faça uma visita ou entre em contato, será um prazer atende-lo(a)</p>			
 					<ul id="container-names">
 						<li>					
 							<div class="sprite-background map fist"><span>Contato</span> </div>
@@ -526,7 +518,7 @@
 								<p>Edifício Coliseum- Centro</p>
 								<p>Balneário do Camboriú-SC</p>
 								<p>Telefone:(47) 3056-2221</p>
-								<p>v8@v8motors.com.br</p>
+								<p>contato@v8motors.co.br</p>
 								<p class="last-p" >Veja no mapa 
 									<div class="sprite-background map last-map">
 										<span>Contato</span> 
@@ -578,7 +570,7 @@
 								</div>
 								<div class="container container12">
 									<div class="form-group">
-										<label>Mensagem:</label>
+										<label>Redes Sociais:</label>
 										<textarea id="redes_sociais"></textarea>
 									</div>
 								</div>
@@ -608,25 +600,15 @@
 	</div>	
 <script type="text/javascript">
 
-$(document).ready(function(){	
+$(document).ready(function(){
+	//setTimeout(function(){ 
 	$('.amazingslider-box-0').children().each(function() {       					 
    			if ($(this).text() == 'Amazing Slider Free Version'){   				   			 		
    			 	$(this).remove();   			 	
    			}
-		});  				
-	});
-	/*
-	jQuery(function(){
-	if(jQuery(window).width() >=2000){
-    			jQuery('#comofunciona .main-container').animate({zoom: '150%'},'slow');    			 
-    		}
-    if(jQuery(window).width() <2000){
-    			jQuery('#comofunciona .main-container').animate({zoom: '200%'},'slow');    			 
-    		}
-    });
-    */
-
+		});     
+		//}, 1500); 
+	})
 </script>
-<script type="text/javascript" src="js/functions.js"></script>
 </body>
 </html>

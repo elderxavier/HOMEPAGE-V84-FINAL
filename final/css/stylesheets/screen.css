@@ -3,6 +3,16 @@
   src: url("../../fonts/demo-ne.ttf");
 }
 
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url("../../fonts/UBUNTU-R.TTF");
+}
+@font-face {
+  font-family: "Evogria Regular";
+  src: url("../../fonts/Evogria.otf");
+}
+
+
 
 
 
@@ -83,9 +93,7 @@ body {
   padding: 0;
   font-family: "nemode demo Regular";
   font-size: 16px;
-  overflow-x: hidden;
-  max-width: 2000px;
-  min-width: 767px;
+  /*overflow-x: hidden;   */
 }
 
 /* line 8, ../sass/_geral.sass */
@@ -93,76 +101,6 @@ strong {
   font-weight: bold;
 }
 
-/* line 11, ../sass/_geral.sass */
-h1 {
-  width: 100%;
-  float: left;
-  font-family: "nemode demo Regular";
-  font-size: 85px;
-  color: #134f89;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* line 20, ../sass/_geral.sass */
-h2 {
-  width: 100%;
-  float: left;
-  font-family: "nemode demo Regular";
-  font-size: 57px;
-  color: #134f89;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* line 29, ../sass/_geral.sass */
-h3 {
-  color: white;
-  float: left;
-  font-family: "nemode demo Regular";
-  font-size: 72px;
-  line-height: 1;
-  margin-top: 80px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-/* line 39, ../sass/_geral.sass */
-h4 {
-  width: 100%;
-  float: left;
-  font-family: "nemode demo Regular";
-  font-size: 76px;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* line 48, ../sass/_geral.sass */
-h5 {
-  width: 100%;
-  float: left;
-  font-family: "nemode demo Regular";
-  font-size: 129px;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-/* line 58, ../sass/_geral.sass */
-h6 {
-  color: #01497e;
-  float: left;
-  font-family: "nemode demo Regular";
-  font-size: 171px;
-  line-height: 1;
-  margin-top: 272px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-}
 /* line 76, ../sass/_geral.sass */
 .alinhamento {
   width: 1100px;
@@ -181,40 +119,31 @@ h6 {
   max-width: 100%;
 }
 
-/* line 85, ../sass/_geral.sass */
-/* line 131, ../sass/_geral.sass */
 #menu {
   background: url("../../img/bg-topo.jpg") repeat scroll 0 0;  
-  float: left;
+  /*float: left;*/
+  top: 0;
+  left: 0;
   position: fixed;
-  width: 100%;
+  width: 100%;  
   z-index: 999;
   border-bottom: 3px solid #000;
   height: 145px;
-  overflow: hidden;
+  /*overflow: hidden;*/
+}
+#menu:after{
+  clear: both;
 }
 #menu .rigth-top{
-  float: right;
-  width: 50%;
-  margin-right: 20.5%;
+  float: right;  
+  margin-right: 2.5%;
   z-index: 999;
 }
 #menu .left-top{
-  float: left;
-  width: 50%;
+  float: left;  
   z-index: 997;
-  margin-left: 20.5%;
+  margin-left: 2.5%;
 }
-/* line 138, ../sass/_geral.sass */
-#menu ul {
-  font-family: "nemode demo Regular";
-  display: block;    
-  /*text-align: left;
-  width: 90%;      
-  padding: 85px 0 21px 15%;
-  z-index: 999;*/
-}
-/* line 142, ../sass/_geral.sass */
 #menu ul li {
   color: #777777;
   cursor: pointer;
@@ -230,10 +159,13 @@ h6 {
 }
 #menu #menu-principal {  
   float:right;
-  margin-top: 17px;
+  margin-top: 17px;   
 }
 #menu #menu-principal li{  
   padding-left: 10px;
+  font-family: "Ubuntu Regular";
+  font-weight: bold;
+  font-size: 14px;
 }
 
 #logo-menu {      
@@ -327,15 +259,15 @@ h6 {
   background: url("../../img/bg-slide.jpg") repeat scroll 0 0;
   float: left;
   margin-top: 148px;
-  width: 100%;
-  height: 765px;
+  width: 100%;  
 }
 
 #institucional {  
   background: url("../../img/bg-quemsomos.jpg");  
-  float: left;
-  height: 575px;
+  float: left;  
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 15px;
 }
 #institucional .logo {
   position: relative;
@@ -369,11 +301,13 @@ h6 {
 #institucional .content {
   margin: 0 auto;
   width: 600px;
+  font-family: "Ubuntu Regular";
 }
 #institucional .content p{
   text-align: center;
   color: #7a7a7a;
   font-size: 20px;
+  line-height: 25px;
 }
 
 
@@ -381,18 +315,23 @@ h6 {
   float: left;
   text-align: center;
   width: 100%;
-  background:#171717;
+  /*background:#171717;*/
+  
 }
 #comofunciona h2{
   display: none;
 }  
 #comofunciona #comofunciona-bg-1{
   height: 475px;
-  background: url("../../img/bg-comofunciona-0-0.jpg");  
+  background: url("../../img/bg-comofunciona-0-0.jpg") no-repeat; 
+  width: 100%;  
+  position: relative; 
 }
 #comofunciona #comofunciona-bg-2{
   height: 475px;
-  background: url("../../img/bg-comofunciona-0-1.jpg");  
+  background: url("../../img/bg-comofunciona-0-1.jpg") no-repeat;  
+  width: 100%;  
+  position: relative;
 }
 
 
@@ -427,6 +366,8 @@ h6 {
   color: #8e8e8e;
   padding: 25px 0px 25px 0px;
   font-size: 50px;
+  font-family: "Evogria Regular";
+  line-height: 51px;
 }
 #solicitante-container h2 span{  
   color: #6e6e6e;
@@ -435,14 +376,15 @@ h6 {
   color: #8e8e8e;
   font-size: 20px;
   width: 420px;
-  margin: 0px auto;  
+  margin: 0px auto;
+  font-family: "Ubuntu Regular";
   
 }
 #solicitante p span {
   color: #6e6e6e; 
 }
 #solicitante #solicitante-line{
-  padding: 5px;
+  padding: 3px;
   width: 1125px;
   background-color: #dfdfdf;
   margin: 37px auto 0 auto;
@@ -457,7 +399,7 @@ h6 {
 }
 #solicitante .wrapper-content{
   background-color: #dfdfdf;
-  width: 1080;
+  width: 1080px;
   margin: 25px auto;
   border-radius: 10px;
   padding: 18px 28px;
@@ -507,6 +449,18 @@ h6 {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
+#solicitante .title-box{
+  width: 100%;
+  text-align: left;
+}
+#solicitante .title-box h4{
+  font-family: "Evogria Regular";
+  color: #8e8e8e;
+  font-size: 25px;  
+  padding: 15px 0 35px 8px;    
+  text-align: left;
+  line-height: 27px;
+}
 
 /* line 512, ../sass/_geral.sass */
 #solicitante .box-form3 input[type="file"] {
@@ -523,7 +477,7 @@ h6 {
 /* line 520, ../sass/_geral.sass */
 /*#solicitante .box-form3 .btn-div {*/
   #solicitante button{
-  width: 167px;
+  width: 90%;
   float: left;
   font-weight: 600;
   border: 1px solid #7e7e7e;
@@ -534,26 +488,24 @@ h6 {
   padding: 9px 6px;
   font-size: 15px;
   cursor: pointer;  
-  margin: 10px 70px;
+  margin: 5px 5px;
 }
 #solicitante button:hover {
   background: #7e7e7e;
   color: #fdfdfd;
 }
 
-/* line 542, ../sass/_geral.sass */
 #solicitante .box-form3 input[type="submit"], #solicitante .box-form3 input[type="reset"],
 .btn.btn-default {
-  width: 174px;
+  width: 90%;
   height: 37px;
   border: 0;
   float: left;
-  font-family: "nemode demo Regular";
+  font-family: "Evogria Regular";
   font-size: 20px;
-  color: #001224;
-  padding-top: 5px;
+  color: #8e8e8e;  
   border-radius: 6px;
-  margin: 40px 70px;
+  margin: 36px 7px;
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s;
@@ -572,24 +524,24 @@ h6 {
 }
 
 #solicitante input[type="text"]:focus, #solicitante select:focus, #solicitante textarea:focus {
-  background-color: #E0FFFF;
+  border: 2px solid #E0FFFF;
 }
 
 
 #solicitante .container-body {
-  height: 585px;
+  height: 655px;
 }
 #solicitante .box-form {
   float: left;
-  width: 32%;
+  width: 35%;
 }
 #solicitante .box-form2 {
   float: left;
-  width: 39%;
+  width: 46%;
 }
 #solicitante .box-form3 {
   float: left;
-  width: 29%;
+  width: 19%;
 }
 #solicitante .box-form2 .wrapper-form {
   margin-right: 40px;
@@ -606,11 +558,12 @@ h6 {
 
 #solicitante .importados .import-headding {
   float: left;
-  font-size: 15px;
+  font-size: 12px;
   margin-left: 8px;
   margin-top: 19px;
   text-align: left;
   width: 100%;
+  font-family: "Arial"
 }
 
 #solicitante-container .solicitante-bottom {
@@ -626,7 +579,7 @@ h6 {
 
 #preview01, #preview02 {
   float: left;
-  margin: 18px 15% 0 15%;
+  margin: 18px 0 0 0px;
   position: relative;
   text-align: center;
   height: 346px;
@@ -639,7 +592,7 @@ h6 {
   -webkit-border-radius: 3px;
   height: 70px;
   margin: 2px 4px;
-  width: 100px;
+  width: 70px;
   float: left;
 }
 #preview01 .preview-loader, #preview02 .preview-loader {
@@ -700,7 +653,7 @@ h6 {
   width: 95px;  
   position: absolute;
   left: 1267px;
-  margin-top: -193px;
+  margin-top: -189px;
   cursor: pointer;
   border-radius: 10px;    
 }
@@ -714,16 +667,27 @@ h6 {
   width: 100%;  
   float: left;
 }
-
+#parceiro .bg-parceiro-top{
+    /*margin-top: 110px;*/
+    padding-top: 110px;
+}
+#parceiro .bg-parceiro p{
+    font-family: "Evogria Regular";
+    font-size: 25px;
+    line-height: 27px;
+    color: #888888;    
+}
+#parceiro .bg-parceiro p span{      
+  color: #494949;  
+}
 #parceiro .sprite-parceiro {
-  background: url("../../img/sejaparceiro.png") no-repeat scroll 0px 100px;
+  background: url("../../img/sejaparceiro.png") no-repeat scroll 0px -50px;
   position: relative;
-  height: 435px;
+  height: 255px;
   width: 717px;
   margin: 0px auto;
   text-align: center;    
-  text-indent: -9999px; 
-  margin-bottom: -25px;    
+  text-indent: -9999px;   
 }
 #parceiro .sprite-parceiro span {
   max-width: 100%;
@@ -761,12 +725,6 @@ h6 {
   width: 47%;
   margin-top: -150px;
 }
-.parceiro-form-holder h3 {
-  color: #727272;
-  font-size: 34px;
-  text-align: left;
-  margin-bottom: 25px;
-}
 
 #parceiro label, #parceiro #divResult {
   color: #727272;
@@ -783,7 +741,7 @@ h6 {
   font-size: 20px;
 }
 #parceiro input:focus, #parceiro select:focus, #parceiro textarea:focus{
-  background-color: #E0FFFF;  
+  border: 2px solid #E0FFFF;  
 }
 
 #parceiro .btn {
@@ -874,7 +832,9 @@ h6 {
   text-transform: uppercase;
   color: #8e8e8e;
   padding: 70px 0px 20px 0px;
-  font-size: 60px;
+  font-size: 65px;
+  font-family: "Evogria Regular";
+  line-height: 66px;
 }
 #contato h2 span{  
   color: #6e6e6e;
@@ -882,10 +842,9 @@ h6 {
 #contato .p-topo {
   text-align: center;
   color: #6e6e6e; 
-  font-size: 18px;  
+  font-size: 19px;  
   margin: 0px auto; 
-  /*font-family: "Ubuntu Mono Regular" ;*/
-
+  font-family: "Ubuntu Regular";  
 }
 #contato .map {
   position: relative;
@@ -916,8 +875,11 @@ h6 {
 #contato #container-names li{
   float: left;
   color: #6e6e6e;
-  padding-left: 80px;
+  margin: 0 35px 0 0;
   font-weight: bold;
+  font-family: "Ubuntu Regular";
+  font-size: 18px;
+  padding-left: 35px;
 }
 #contato #container-names li a{
   text-decoration: none;
@@ -925,42 +887,51 @@ h6 {
   font-weight: 500;
 }
 #contato .container-contato{
-  margin: 420px 0 0 23.5%;
+  margin: 420px 27%;
   width: 100%;
 }
 
 
 #contato .box-info{
   float: left;
-  width: 320px;  
+  width: 15%;  
   position: relative;   
 }
 #contato h3{
   text-transform: uppercase;
   color: #8e8e8e;  
   font-size: 30px;
-  margin: 0 0 0 -35px
+  margin: 0;
+  text-align: left;
+  font-family: "Evogria Regular";
+  line-height: 31px;
   
 }
 #contato h3 span{
   color: #6e6e6e;
 }
-#contato .box-info h3, #contato .box-atendimento h3{
-  margin-left: -35px;
-}
-#contato .container-bg{
-  background-color: #FFF;
-  padding: 18px 28px;
+#contato .container-bg{  
+  padding: 38px 0px;
   border-radius: 10px;
   color: #6e6e6e;
   text-align: left;
   position: absolute;
   z-index: 99;
-  margin-top: 40px;
+  margin: 40px 0;
+  width: 100%;
+  text-align: center;
+  background: #fff;   
+  background: -moz-linear-gradient(top, #fff 0%, #dedede 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#dedede)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fff 0%,#dedede 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fff 0%,#dedede 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fff 0%,#dedede 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #fff 0%,#dedede 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#dedede',GradientType=0 ); /* IE6-9 */
 }
 #contato .container-bg p{
   padding-top: 5px;
-  font-family: "sans-serif";
+  font-family: "Ubuntu Regular";
 
 }
 #contato .container-bg .last-p{
@@ -969,32 +940,50 @@ h6 {
  
 #contato .box-formulario{
   float: left;
-  width: 400px;  
-  position: relative;     
+  width: 15%;  
+  position: relative; 
+  margin: 0 2%;    
 }
-#contato .contato-form-col01 {
-  background-color: #dfdfdf;
-  height: 570px;  
+#contato .box-formulario h3{
+  margin-left: 18px;
+}
+#contato .contato-form-col01 {  
+  height: 500px;  
   border-radius: 10px;
-  padding: 18px 28px;
+  padding: 18px 18px;
   position: absolute;
   z-index: 99;
   margin-top: 40px;  
-   
+  background: #fff;   
+  background: -moz-linear-gradient(top, #fff 0%, #dedede 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#dedede)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fff 0%,#dedede 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fff 0%,#dedede 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fff 0%,#dedede 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #fff 0%,#dedede 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#dedede',GradientType=0 ); /* IE6-9 */
+}
+
+#contato .contato-form-col01 textarea {
+  height: 70px;
 }
 
 .parceiro-form-holder h3 {
   color: #727272;
-  font-size: 25px;
+  font-size: 23px;
   text-align: left;
   margin-bottom: 25px;
+  margin-top: 100px;
+  font-family: "Evogria Regular";
 }
+
 .parceiro-form-holder .parceiro-form-col01 h3{
-  text-align: center;
+  text-align: left;
+  margin-left: -18px;
 }
 #contato label, #contato#divResult {
   color: #727272;
-  font-size: 19px;
+  font-size: 16px;
 }
 #contato .parceiro-form-col01 textarea {
   height: 66px;
@@ -1007,59 +996,52 @@ h6 {
   font-size: 20px;
 }
 #contato input:focus, #contatoselect:focus, #contatotextarea:focus{
-  background-color: #E0FFFF;
+  border: 2px solid #E0FFFF;
 }
 #contato .submit-container {
   padding-left: 10px;
-}
-
-#contato .btn {
-  padding: 2px 35px;
-  border: medium none;  
-  color: #000;
+} 
+#contato .btn-primary  {
+  padding: 5px 35px 0 35px;
+  border: none;    
   cursor: pointer;
   float: left;
   font-family: "nemode demo Regular";
   font-size: 20px;
-  height: 37px;
-  margin: 0;
-  padding-top: 5px;
+  height: 37px;  
   text-transform: uppercase;  
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-}
-
-#contato .btn-primary  {
   color: #ffffff;
-  background: #737373; 
-  margin-top: 10px;
-  background: -moz-linear-gradient(top, #737373 0%, #0e0e0e 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#737373), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #737373 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #737373 0%,#0e0e0e 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #737373 0%,#0e0e0e 100%); /* IE10+ */
-  background: linear-gradient(to bottom, #737373 0%,#0e0e0e 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#737373', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+  background: #7e7e7e;   
+  margin-top: 20px;  
 }
 #contato .btn-primary:hover {
-  background: #7e7e7e;
+  background: #0E0E0E;
   color: #fdfdfd;  
 }
 
 #contato .box-atendimento{
   float: left;
-  width: 320px;  
-  position: relative; 
-  padding-left: 105px;
+  width: 15%;  
+  position: relative;   
 }
-#contato .bg-atendimento{
-  padding: 30px 35px 30px 60px;
+#contato .bg-atendimento{  
   background-color: #FFF;
   border-radius: 10px;
   position: absolute;
   z-index: 99;
-  margin-top: 40px;loc
+  margin-top: 40px;
+  width: 100%;
+  background: #fff;   
+  background: -moz-linear-gradient(top, #fff 0%, #dedede 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#dedede)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fff 0%,#dedede 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fff 0%,#dedede 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fff 0%,#dedede 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #fff 0%,#dedede 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#dedede',GradientType=0 ); /* IE6-9 */
 }
 #contato .atendimento {
   position: relative;
@@ -1067,20 +1049,28 @@ h6 {
   width: 140px;  
   text-align: center;  
   background-position: -379px -462px;
-  text-indent: -9999px;        
+  text-indent: -9999px; 
+  margin: 15% 30%;       
 }
 #contato .atendimento span {
   max-width: 100%;
   height: auto;
 }
 
+#footer:before {
+  clear: both;
+}
 #footer{
   background: url("../../img/bg-footer.jpg");
-  position: relative;  
-  width: 100%;
+  position: relative;    
   z-index: 2;
-  height: 550px;
-  float: left;
+  height: 475px;
+  float: left;  
+  width: 100%;    
+  margin: -300 auto;
+  clear: both;
+
+  
 }
 
 /* line 1, ../sass/_modal.sass */
@@ -1332,28 +1322,33 @@ html {
       cursor: pointer;  
   }  
   /*fim kanji*/
-  /*top logos*/
-  .top-logos-container{    
-
-  }
-  .top-logos {
-    height: 3px;
+  /*top logos*/ 
+  #logos {        
+    margin: 0 auto;    
+    clear: both;
     position: fixed;
+    height: auto;
+    background: #fff;
+    z-index: 999;
+    width: 100%;
+  }
+  
+  .top-logos {            
+    position: relative;
     z-index: 9998;
     overflow: hidden;
     background: #FFF;
-    left: 0;
-    width: 100%;
-  
+    margin: 5px 7%;
+    width: 100%;    
 }
 
 .background-logos{
   background: url('../../img/sprite-top.png') no-repeat;
 }
 #top-logos-ul { 
-  display: inline-block;
-  margin: 5px 0px 0px 23.5%;
-  width: 50%;
+  display: inline-block;    
+  position: relative;
+  width: 100%;  
 }
 #top-logos-ul li {
   float: left;
@@ -1362,6 +1357,7 @@ html {
   height: 30px;
   width: 40px;
   border-right: 1px solid #c6c6c6;
+  text-align: center;
 }
 .li-logo-1 {
   background-position: -102px -15px;

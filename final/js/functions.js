@@ -1,32 +1,44 @@
-$(document).ready(function(){
-
-	mascara();
-	ancora_menu();
-	institucional();
-	solicitante();
-	$("#menu-principal").menuMobile();	
-});
-
-
-
-
 
 
 //ancora menu
 function ancora_menu(){
+	setTimeout(function(){ 
+	      $('#classificados-link').click(function(evt){      	      								
+					window.open('http://v8class.com.br', '_blank');
+			});
+
+	      	$('.link-home').click(function(evt){      	      				
+					$('html, body').animate({ scrollTop: $('#home').offset().top - 148}, 1700);			
+					evt.preventDefault();					
+					
+			});
+	      	$('.link-institucional').click(function(evt){      	      				
+					$('html, body').animate({ scrollTop: $('#institucional').offset().top - 148}, 1700);			
+					evt.preventDefault();					
+					
+			});
+			$('.link-solicitante').click(function(evt){      	      				
+					$('html, body').animate({ scrollTop: $('#solicitante').offset().top - 148}, 1700);			
+					evt.preventDefault();					
+					
+			});
+			$('.link-parceiro').click(function(evt){      	      				
+					$('html, body').animate({ scrollTop: $('#parceiro').offset().top - 148}, 1700);			
+					evt.preventDefault();									
+			});
+			$('.link-contato').click(function(evt){      	      				
+					$('html, body').animate({ scrollTop: $('#contato').offset().top - 148}, 1700);			
+					evt.preventDefault();									
+			});      
+		}, 3000);
+	/*
 	$('#menu a, #escolha .box a').click(function(evt){
 	     var alvo = $(this).attr('href').split('#').pop();
       $('html, body').animate({scrollTop: $('#'+alvo).offset().top - 148 }, 1700);      
       evt.preventDefault();
    });
+*/
 }
-
-
-
-
-
-
-
 function login(){
 	$("#menu .login").click(function(e){
 		e.preventDefault();
@@ -43,39 +55,8 @@ function login(){
   });
 }
 
-
-
-
-
-
-
-
-
-
-
-
 function solicitante(){
-
-	/*$("#solicitante-btn").click(function(){
-		$("#sol-1").fadeOut(300);
-		$("#sol-2").fadeIn(900);
-		$(".sombra").fadeIn(300);
-		clearEmailSolicitacao();
-		$("#menu li:eq(3)").click();
-		initUploadImages();
-	});
-
-	$("#fechar-solicitante").click(function(){
-		$("#sol-2").fadeOut(300);
-		$("#sol-1").fadeIn(500);
-		$(".sombra").fadeOut(300);
-	}); */
-
-	/*$("#open-foto-field").click(function(e){		
-		$("#form_fotos01 #foto_field").click();
-		e.preventDefault();
-	});*/
-
+	
 	$("#open-foto-field2").click(function(e){
 		$("#form_fotos02 #foto_field").click();
 		e.preventDefault();
@@ -83,25 +64,6 @@ function solicitante(){
 
 	$("#sendSolicitacaoBtn").click(sendEmailSolicitacao);
 }
-
-
-
-function institucional(){
-	$("#institucional #content-0").show(300);
-
-	$("#institucional ul li").click(function(){
-		var index = $(this).index();
-
-		$("#institucional .content").fadeOut(500);
-		$("#institucional #content-"+index).fadeIn(500);
-
-		$("#institucional ul li").removeClass("menu-institucional-ativo");
-		$("#institucional ul li:eq("+index+")").addClass("menu-institucional-ativo");
-
-	});
-}
-
-
 
 function mascara(){
 	$(".mask-data").mask("99/99/9999"); //data
@@ -263,7 +225,10 @@ $(function(){
 
 
 
-$(document).ready(function(){			
+$(document).ready(function(){
+	mascara();			
+	solicitante();
+	$("#menu-principal").menuMobile();					
 	$('#kanji-menu span').mouseover(function(event){
 		event.preventDefault(event);	
         $(".top-logos").animate({height: '40px'});
@@ -308,7 +273,10 @@ $(document).ready(function(){
       $('.v8class').click(function(evt){      	      				
 				//$('html, body').animate({ scrollTop: $('.classificados-class table').offset().top - 148}, 1700);			
 				//evt.preventDefault();					
-				window.open('http://v8class.com.br/final/', '_blank');
+				window.open('http://v8class.com.br', '_blank');
 		});
+      ancora_menu();
+
 
 });
+
